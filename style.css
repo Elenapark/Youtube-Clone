@@ -38,7 +38,7 @@ button:focus {
     border: none;
     cursor: pointer;
     outline: none;
-}
+    background-color: var(--color-white);}
 
 /*Header*/
 
@@ -80,7 +80,7 @@ header .icons .fa-search {
 }
 
 
-/*Video Info*/
+/*Video Info metadata*/
 /*효과를 주고자 하는 선택자명은 최대한 구체적으로*/
 
 .info {
@@ -120,9 +120,30 @@ header .icons .fa-search {
     color:var(--color-dark-grey);
 }
 
+/*Video Info action*/
 
+.info .actions {
+    display: flex;
+    justify-content: space-around;
+    padding: var(--padding) 0;
+}
 
+.info .actions button {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-small);
+    color:var(--color-dark-grey);
 
+}
 
+.info .actions button i {
+    /*margin: 0 auto를 이용한 가운데정렬*/
+    margin: 0 auto;
+    margin-bottom: calc(var(--padding)/2);
+    font-size: 16px;
+}
 
+.info .actions button i.active {
+    color: var(--color-blue);
+}
 

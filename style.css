@@ -255,5 +255,8 @@ flex: 1 1 5%;
     .infoAndUpNext {
         flex-direction: row;
         padding: var(--padding);
+        max-width: 1000px;
+        margin: 0 auto;
+
     }
 }

@@ -1,11 +1,11 @@
 :root {
     /*Color*/
-    --color-white:#FFFFFF;
-    --color-black:#130901;
-    --color-blue:#2351C4;
-    --color-red:#F30404;
-    --color-dark-grey:#838284;
-    --color-light-grey:#F0EEF0;
+    --color-white: #FFFFFF;
+    --color-black: #130901;
+    --color-blue: #2351C4;
+    --color-red: #F30404;
+    --color-dark-grey: #838284;
+    --color-light-grey: #F0EEF0;
 
     /*Size*/
     --padding: 12px;
@@ -28,22 +28,34 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+ul {
+    list-style: none;
+}
+
+/*브라우저 자체에서 주는 버튼 속성 제거*/
+button,
+button:focus {
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
 /*Header*/
 
 header {
-    display:flex;
+    display: flex;
     justify-content: space-between;
-    padding:var(--padding);
+    padding: var(--padding);
     background-color: var(--color-black);
-    color:var(--color-white);
+    color: var(--color-white);
 }
 
 header .logo {
     font-size: var(--font-large);
 }
 
-header .logo i{
-    color:var(--color-red);
+header .logo i {
+    color: var(--color-red);
 }
 
 header .icons .fa-search {
@@ -68,10 +80,45 @@ header .icons .fa-search {
 }
 
 
+/*Video Info*/
+/*효과를 주고자 하는 선택자명은 최대한 구체적으로*/
 
+.info {
+    padding: var(--padding);
+}
 
+.info .metadata .hashtags {
+    display: flex;
+    font-size: var(--font-small);
+    color: var(--color-blue);
+}
 
+.info .metadata .hashtags li {
+    margin-right: var(--padding);
+}
 
+.info .metadata .titleAndButton {
+    display: flex;
+}
+
+.info .metadata .titleAndButton .title {
+    /*css line clamp : 내용을 제한해줌*/
+    font-size: var(--font-medium);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    margin-right: var(--padding);
+}
+
+.info .metadata .titleAndButton .moreBtn {
+    height: 100%;
+}
+
+.info .views {
+    font-size: var(--font-small);
+    color:var(--color-dark-grey);
+}
 
 
 

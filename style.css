@@ -5,10 +5,10 @@
     --color-blue:#2351C4;
     --color-red:#F30404;
     --color-dark-grey:#838284;
-    --color-light-grey:#F0EEF0
+    --color-light-grey:#F0EEF0;
 
     /*Size*/
-    --side-padding: 12px;
+    --padding: 12px;
     --avatar-size: 36px;
 
     /*Font Size */
@@ -27,3 +27,42 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+
+header {
+    display:flex;
+    justify-content: space-between;
+    padding:var(--padding);
+    background-color: var(--color-black);
+    color:var(--color-white);
+}
+
+header .logo {
+    font-size: var(--font-large);
+}
+
+header .logo i{
+    color:var(--color-red);
+}
+
+header .icons .fa-search {
+    margin-right: var(--padding);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
